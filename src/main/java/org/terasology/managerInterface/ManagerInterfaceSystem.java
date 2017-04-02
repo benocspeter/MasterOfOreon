@@ -37,6 +37,7 @@ import org.terasology.network.ClientComponent;
 import org.terasology.registry.In;
 import org.terasology.registry.Share;
 import org.terasology.rendering.nui.NUIManager;
+import sun.rmi.runtime.Log;
 
 @Share(ManagerInterfaceSystem.class)
 @RegisterSystem(RegisterMode.AUTHORITY)
@@ -140,6 +141,7 @@ public class ManagerInterfaceSystem extends BaseComponentSystem {
     }
 
     public void setDigMode() {
+     //   logger.warn("DIG MODE SET");
         currentManagerCommandMode = ManagerCommandMode.Dig;
     }
 
